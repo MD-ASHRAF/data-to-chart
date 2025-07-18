@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://cdn.jsdelivr.net 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Data To Chart Creator</title>
+    </head>
+    <body>
+        <div class="dashboard" id="dashboard">
+            <div class="tile">
+                <div>
+                    <h2>Bar Chart</h2>
+                    <button id="barChart">Generate</button>
+                </div>
+                <img src="./img/barchart.svg" alt="bar chart image">
+            </div>
+            <div class="tile">
+                <div>
+                    <h2>Donut Chart</h2>
+                    <button id="donutChart">Generate</button>
+                </div>
+                <img src="./img/donut.svg" alt="donut chart image">
+            </div>
+            <div class="tile">
+                <div>
+                    <h2>Pie Chart</h2>
+                    <button id="pieChart">Generate</button>
+                </div>
+                <img src="./img/pie.svg" alt="pie chart image">
+            </div>
+            <div class="tile">
+                <div>
+                    <h2>Progress Chart</h2>
+                    <button id="progressChart">Generate</button>
+                </div>
+                <img src="./img/progress.svg" alt="pie chart image">
+            </div>
+        </div>        
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

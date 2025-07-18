@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://cdn.jsdelivr.net 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Bar chart</title>
+    </head>
+    <body>
+        <div id="barChartContainer" class="container bar-chart-container">
+            <h1><img id="back" src="./img/back.svg" alt="<" class="back"> Bar Chart</h1>
+            <form id="data-form">
+                <label for="months">Enter label name (comma separated):</label>
+                <input type="text" id="months" placeholder="Jan, Feb, Mar, Apr">
+                <br>
+                <label for="values">Enter values (comma separated):</label>
+                <input type="text" id="values" placeholder="10, 20, 30, 40">
+                <br>
+                <button id="generateChart">Generate Chart</button>
+            </form>
+            <div class="color-n-print">
+                <h4>Change Color: <input type="color" id="chartColor" name="favcolor" value="#ff0000"></h4>
+                <!-- <h4 id="printBtn">Print: <img src="./img/printer.svg" alt="" srcset=""></h4> -->
+            </div>
+            <div id="chart-container"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="js/bar-chart.js"></script>
+    </body>
+</html>
