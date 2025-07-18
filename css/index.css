@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* make transparent link selection, adjust last value opacity 0 to 1.0 */
@@ -10,11 +12,11 @@ body {
     /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;
     /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color: #E4E4E4;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #477f95 65%);
-    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #756eb2;
+    background-image: linear-gradient(to bottom, #c6abf6 0%, #756eb2 65%);
+    font-family: "Merriweather", serif;
     font-size: 12px;
-    height: 100vh;
+    height: calc(100vh - 90px);
     margin: 0px;
     padding: 0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
@@ -22,6 +24,29 @@ body {
     text-transform: uppercase;
     width: 100%;
     color: #000;
+}
+
+header {
+    background: #fff;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 14px 5px 4px 0px #7b53bb;
+    position: fixed;
+    top: 10px;
+    left: 0;
+}
+
+header .brand-name {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    color: #1e1e1e;
 }
 
 input[type="text"],
@@ -32,8 +57,19 @@ input[type="number"] {
     color: #000;
     height: 35px;
     display: inline-block;
-        font-size: 18px;
+    font-size: 18px;
     margin-bottom: 20px;
+}
+
+.banner-text {
+    width: 80%;
+    margin: 90px auto 0;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2;
+    color: #ffffff;
 }
 
 
@@ -44,7 +80,11 @@ input[type="number"] {
     justify-content: center;
     position: relative;
     transition: left ease .5s;
-    margin-top: 20px;
+    background: #fff;
+    max-width: 80%;
+    margin: 40px auto 0;
+    padding: 30px 15px;
+    border-radius: 2px 2px 0 0;
 }
 
 
@@ -53,7 +93,7 @@ input[type="number"] {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 3px 7px 3px rgb(191 191 191);
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -74,7 +114,7 @@ button {
     padding: 0 10px;
     outline: none;
     border: none;
-    background: #139999;
+    background: #261399;
     box-shadow: 2px 2px 3px #acacac;
     color: #fff;
 }
@@ -139,12 +179,6 @@ g.move {
 .color-n-print h4 img {
     width: 30px;
     margin-left: 5px;
-}
-
-@media screen and (prefers-color-scheme: light) {
-    body {
-        background-image: linear-gradient(to bottom, #ffffff 0%, #477f95 65%);
-    }
 }
 
 .legends-wrap {

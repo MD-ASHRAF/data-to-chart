@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://cdn.jsdelivr.net 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <title>Data To Chart Creator</title>
     </head>
     <body>
+        <header class="dc-header">
+            <p class="brand-name">Data to chart</p>
+        </header>
+        <p class="banner-text">Our platform empowers you to instantly generate dynamic charts and graphs from your unique inputs. Unlock hidden patterns and propel your strategic decision-making with unparalleled clarity. Gain a competitive edge by making your data truly speak volumes.</p>
         <div class="dashboard" id="dashboard">
             <div class="tile">
                 <div>
@@ -41,7 +42,6 @@
                 <img src="./img/progress.svg" alt="pie chart image">
             </div>
         </div>        
-        <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
